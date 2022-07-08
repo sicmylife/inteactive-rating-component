@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,400&display=swap");
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--VeryDarkBlue);
+}
+
+.container {
+  background-color: var(--DarkBlue);
+  color: var(--LightGrey);
+  border-radius: 20px;
+  max-width: 400px;
+}
+
+.card-one {
+  padding: 20px 30px;
+}
+
+.card-one .error {
+  color: #ff3333;
+  font-size: 0.7em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-one .text {
+  padding: 20px 0;
+}
+
+.card-one h1 {
+  color: white;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.card-one p {
+  font-size: 0.7em;
+  line-height: 1.6em;
+  width: 300px;
+}
+
+.card-one .ratting ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-one .ratting ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #444445;
+  color: var(--LightGrey);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card-one .ratting ul li:hover:not(li.active) {
+  background-color: var(--orange);
+  color: white;
+}
+
+.card-one .card-one .ratting ul li.active {
+  background-color: greenyellow;
+  color: white;
+}
+
+.card-one .submit {
+  padding: 20px 0;
+}
+
+.card-one .submit button {
+  width: 100%;
+  background-color: var(--orange);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 0;
+  font-size: 1em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: white;
+  cursor: pointer;
+}
+
+.card-one .submit button:hover {
+  background-color: white;
+  color: var(--orange);
+}
+
+.card-two {
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.card-two .img {
+  margin: 20px 0;
+}
+
+.card-two .selected-ratting {
+  color: var(--orange);
+  background-color: #484749;
+  border-radius: 30px;
+  margin: 10px auto 20px auto;
+  padding: 10px 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.card-two .text h2 {
+  font-size: 2em;
+  color: white;
+}
+
+.card-two .text p {
+  font-size: 0.9em;
+  margin: 20px 0;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+.icon {
+  padding: 20px 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #515152;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
