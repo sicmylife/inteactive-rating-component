@@ -98,13 +98,13 @@ body {
   transition: 0.3s;
 }
 
-.card-one .ratting ul li:hover:not(li.active) {
-  background-color: var(--orange);
+.card-one .ratting ul li a {
+  text-decoration: none;
   color: white;
 }
 
-.card-one .card-one .ratting ul li.active {
-  background-color: greenyellow;
+.card-one .ratting ul li:hover {
+  background-color: var(--orange);
   color: white;
 }
 

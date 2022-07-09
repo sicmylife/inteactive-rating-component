@@ -13,7 +13,7 @@ rattingBtns.forEach(btn => {
 btn.addEventListener('click', (e) => {
   e.preventDefault()
 const li = e.target.textContent
-console.log(li);
+btn.style.backgroundColor='white';
 selectedRatting.textContent = `You selected ${li} of 5`
 enviar();
 
